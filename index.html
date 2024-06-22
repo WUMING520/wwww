@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>话费充值</title>
+</head>
+<body>
+    <h1>话费充值</h1>
+    <label for="phone">手机号码：</label>
+    <input type="text" id="phone" name="phone"><br><br>
+    <label for="amount">充值金额：</label>
+    <input type="text" id="amount" name="amount"><br><br>
+    <button onclick="recharge()">充值</button>
+    
+    <script>
+        function recharge() {
+            const phone = document.getElementById('phone').value;
+            const amount = document.getElementById('amount').value;
+            
+            // 模拟充值过程
+            alert('为手机号 ' + phone + ' 充值 ' + amount + ' 元成功！');
+        }
+    </script>
+</body>
+</html>
